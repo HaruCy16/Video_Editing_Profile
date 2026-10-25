@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: Arial, Helvetica, sans-serif; }
+  ::selection { background: #d9ff67; color: #181818; }
+}
+
+@layer components {
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-muted; }
+  .section-title { @apply text-5xl font-black leading-[0.95] tracking-[-0.07em] sm:text-6xl; }
+  .marker { background: linear-gradient(transparent 61%, #d9ff67 0); }
+  .nav-link { @apply transition hover:text-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink; }
+  .mobile-link { @apply block rounded-xl px-4 py-3 text-sm font-bold; }
+  .filter-button { @apply rounded-full border border-line px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-muted transition hover:border-ink hover:text-ink; }
+  .filter-button.active { @apply border-ink bg-ink text-paper; }
+  .project-card { @apply block min-w-0 rounded-2xl border border-line bg-paper p-4 transition duration-200 hover:-translate-y-1 hover:border-ink hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink; }
+  .project-poster { @apply relative flex aspect-[1.65] items-end justify-between overflow-hidden rounded-xl p-4 text-2xl font-black tracking-[-0.07em]; }
+  .project-poster i { @apply flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-sm not-italic; }
+  .poster-showreel { background: radial-gradient(circle at 75% 25%, #d9ff67 0 11%, transparent 12%), linear-gradient(135deg, #292a25, #86877d); color: #f5f5f1; }
+  .poster-ugc { background: linear-gradient(135deg, #dfd8cc, #bd9b77); color: #181818; }
+  .poster-reels { background: linear-gradient(135deg, #b9d9d6, #5c8e89); color: #181818; }
+  .poster-ads { background: linear-gradient(135deg, #d9ff67, #9aad45); color: #181818; }
+  .poster-longform { background: linear-gradient(135deg, #d3d0e4, #817d9f); color: #181818; }
+  .poster-film { background: linear-gradient(135deg, #d7c8bd, #936d58); color: #181818; }
+  .service-row { @apply grid gap-4 py-7 sm:grid-cols-[3rem_1fr] sm:gap-8; }
+  .service-row h3 { @apply text-2xl font-black tracking-[-0.05em]; }
+  .service-row p { @apply mt-2 max-w-xl leading-7 text-muted; }
+  .tag { @apply rounded-full border border-ink/20 px-4 py-2 text-xs font-bold uppercase tracking-[0.12em]; }
+}
+
+@media (max-width: 639px) {
+  .section-title { font-size: 3.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}

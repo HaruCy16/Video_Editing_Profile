@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyy — Video Editor Portfolio. Cyrus Wilson creates short-form, UGC, VSL, and AI-assisted video content.">
+  <meta name="theme-color" content="#f5f5f1">
+  <title>Cyy — Video Editor Portfolio</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-paper text-ink antialiased">
+  <!-- Site header and navigation -->
+  <header class="sticky top-0 z-50 border-b border-line/70 bg-paper/95 backdrop-blur-sm" id="top">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
+    <a href="#top" class="text-xl font-black tracking-[-0.08em]" aria-label="Cyy home">CW<span class="text-lime">.</span></a>
+    <nav aria-label="Main navigation">
+      <button id="menu-button" class="rounded-full border border-line px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] md:hidden" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="rounded-full bg-ink px-4 py-2 text-paper transition hover:bg-lime hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="#contact">Contact <i class="fa-solid fa-arrow-up-right-from-square ml-1" aria-hidden="true"></i></a>
+      </div>
+      <div id="mobile-menu" class="fixed left-5 right-5 top-[4.5rem] z-20 hidden rounded-2xl border border-line bg-white p-3 shadow-xl md:hidden">
+        <a class="mobile-link" href="#work">Work</a>
+        <a class="mobile-link" href="#services">Services</a>
+        <a class="mobile-link" href="#about">About</a>
+        <a class="mobile-link bg-ink text-paper" href="#contact">Contact <i class="fa-solid fa-arrow-up-right-from-square ml-1" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section with introduction, calls to action, and portrait -->
+    <section class="mx-auto grid max-w-7xl gap-12 px-5 pb-20 pt-10 sm:px-8 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:px-12 lg:pb-28 lg:pt-20">
+      <div class="flex flex-col justify-center">
+        <p class="eyebrow">Cyrus Wilson · Video editor</p>
+        <h1 class="mt-5 max-w-3xl text-[clamp(3.4rem,8vw,7.25rem)] font-black leading-[0.9] tracking-[-0.075em]">Clear stories.<br><span class="marker">Better watch time.</span></h1>
+        <p class="mt-7 max-w-xl text-lg leading-8 text-muted sm:text-xl">I edit short-form, UGC, VSL, and promotional video for creators and businesses that want their message to land quickly.</p>
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a href="#work" class="rounded-full bg-ink px-6 py-3 text-sm font-bold text-paper transition hover:-translate-y-0.5 hover:bg-lime hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">View selected work <i class="fa-solid fa-arrow-down-right ml-1" aria-hidden="true"></i></a>
+          <a href="#contact" class="rounded-full border border-ink px-6 py-3 text-sm font-bold transition hover:-translate-y-0.5 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">Start a project</a>
+        </div>
+        <div class="mt-12 grid max-w-xl grid-cols-3 border-y border-line py-5">
+          <div><strong class="block text-xl font-black">2+</strong><span class="text-xs uppercase tracking-[0.12em] text-muted">years editing</span></div>
+          <div><strong class="block text-xl font-black">AI-assisted</strong><span class="text-xs uppercase tracking-[0.12em] text-muted">faster workflow</span></div>
+          <div><strong class="block text-xl font-black">CapCut</strong><span class="text-xs uppercase tracking-[0.12em] text-muted">Claude · ChatGPT</span></div>
+        </div>
+      </div>
+      <div class="relative mx-auto w-full max-w-md lg:mt-4">
+        <div class="group relative">
+          <div class="portrait-card aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#dcdcd3]">
+            <img src="./assets/profile_picture.jpeg" alt="Portrait of Cyrus Wilson" class="h-full w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="hidden h-full w-full flex-col items-center justify-center bg-[#282923] text-paper">
+              <span class="text-8xl font-black tracking-[-0.1em] text-lime">CW<span class="text-paper">.</span></span>
+              <span class="mt-5 text-xs uppercase tracking-[0.2em] text-white/60">Cyrus Wilson</span>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute -bottom-5 -left-4 rounded-2xl border border-line bg-white px-5 py-4 opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 sm:-left-8">
+            <p class="text-xs uppercase tracking-[0.14em] text-muted">Freelance video editor</p>
+            <p class="mt-1 text-sm font-bold">Available for freelance editing <span class="ml-1 inline-block h-2 w-2 rounded-full bg-lime"></span></p>
+          </div>
+        </div>
+        <p class="mt-10 max-w-xs text-sm leading-6 text-muted lg:ml-auto">Editing with a creative eye, technical instinct, and a practical AI-supported workflow.</p>
+      </div>
+    </section>
+
+    <!-- Selected work section with project filters and portfolio cards -->
+    <section id="work" class="border-t border-line bg-white">
+      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div class="flex flex-col justify-between gap-7 sm:flex-row sm:items-end">
+          <div><p class="eyebrow">Selected work</p><h2 class="section-title mt-4">A few projects<br><span class="marker">worth opening.</span></h2></div>
+          <p class="max-w-sm text-sm leading-6 text-muted">Browse the portfolio lanes below. Each card opens the supplied Drive source directly.</p>
+        </div>
+        <div id="filters" class="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter selected work">
+          <button class="filter-button active" data-filter="all">All work</button>
+          <button class="filter-button" data-filter="ugc">UGC</button>
+          <button class="filter-button" data-filter="reels">Short form</button>
+          <button class="filter-button" data-filter="longform">Long form</button>
+          <button class="filter-button" data-filter="ads">Ads / promo</button>
+        </div>
+        <div id="project-grid" class="mt-5 grid gap-x-8 gap-y-8 grid-cols-1 min-[600px]:grid-cols-2 lg:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <!-- Services section describing the available editing services -->
+    <section id="services" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+      <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+        <div><p class="eyebrow">What I can help with</p><h2 class="section-title mt-4">Editing that<br><span class="marker">stays focused.</span></h2></div>
+        <div><p class="max-w-lg text-lg leading-8 text-muted">The goal is simple: make the right idea easier to understand and harder to scroll past.</p>
+          <div class="mt-12 divide-y divide-line border-y border-line">
+            <article class="service-row"><span class="text-sm text-muted">01</span><div><h3>Short-form &amp; UGC</h3><p>Hooks, pacing, captions, cutdowns, and platform-ready vertical edits.</p></div></article>
+            <article class="service-row"><span class="text-sm text-muted">02</span><div><h3>VSL &amp; long form</h3><p>Structure, rhythm, clarity, and visual polish for longer content.</p></div></article>
+            <article class="service-row"><span class="text-sm text-muted">03</span><div><h3>AI-assisted workflow</h3><p>CapCut, Claude, ChatGPT, and other tools used to move faster without losing judgment.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section with background, approach, and skills -->
+    <section id="about" class="border-y border-line bg-[#e9e9e2]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:px-12 lg:py-28">
+        <p class="eyebrow">A short introduction</p>
+        <div><h2 class="section-title max-w-3xl">A video editor who thinks <span class="marker">beyond the cut.</span></h2><div class="mt-8 max-w-2xl space-y-5 text-lg leading-8 text-muted"><p>I’m Cyrus Wilson, a freelance video editor with 2+ years of experience across social content, UGC, VSL, and AI-assisted editing. My experience includes work with 7AI Ventures and independent portfolio projects.</p><p>I care about the audience, the business goal, and the details that make an edit feel finished.</p></div><div class="mt-8 flex flex-wrap gap-2"><span class="tag">Storytelling</span><span class="tag">Technical problem-solving</span><span class="tag">Fast iteration</span></div></div>
+      </div>
+    </section>
+
+    <!-- Contact section with email and LinkedIn links -->
+    <section id="contact" class="mx-auto max-w-7xl px-5 py-20 text-center sm:px-8 lg:px-12 lg:py-28">
+      <p class="eyebrow">Let’s work together</p><h2 class="section-title mt-4">Have a project<br><span class="marker">in mind?</span></h2>
+      <p class="mx-auto mt-6 max-w-md text-lg leading-8 text-muted">Send the brief, the footage, or simply the idea. I’ll get back to you from there.</p>
+      <div class="mt-9 flex flex-wrap justify-center gap-3"><a class="rounded-full bg-ink px-6 py-3 text-sm font-bold text-paper transition hover:bg-lime hover:text-ink" href="mailto:cyrus.freelancer.ve.webdev@gmail.com">Email Cyrus <i class="fa-solid fa-envelope ml-1" aria-hidden="true"></i></a><a class="rounded-full border border-ink px-6 py-3 text-sm font-bold transition hover:bg-white" href="https://www.linkedin.com/in/cyrus-wilson-2b82b2375" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fa-brands fa-linkedin ml-1" aria-hidden="true"></i></a></div>
+    </section>
+  </main>
+  <!-- Site footer with copyright and back-to-top link -->
+  <footer class="border-t border-line"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12"><div><span class="font-black text-ink">CW<span class="text-lime">.</span></span><span class="ml-3">Video editing · Web development</span></div><div class="flex items-center gap-5"><span>© <span id="year"></span> Cyrus Wilson</span><a href="#top" class="font-semibold text-ink hover:text-muted">Back to top <i class="fa-solid fa-arrow-up ml-1" aria-hidden="true"></i></a></div></div></footer>
+  <script src="./js/render.js"></script>
+</body>
+</html>
